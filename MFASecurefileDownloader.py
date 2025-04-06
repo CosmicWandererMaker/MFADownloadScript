@@ -163,11 +163,11 @@ def download_file_with_selenium_mfa():
     Prompts for separate Login URL and Download URL.
     Prompts for MFA code *after* initial login attempt.
     Requires user customization for element locators and manual chromedriver setup.
-    *** Locators below are BEST GUESSES or USER-PROVIDED for securefile.mandiant.com - VERIFY THEM! ***
+    *** Locators below are BEST GUESSES or USER-PROVIDED for Site - VERIFY THEM! ***
     """
     # --- Get Initial User Input ---
     # Set default login URL for convenience, can be overridden by user input
-    default_login_url = "https://securefile.mandiant.com"
+    default_login_url = "https://google.com"
     login_url_input = input(f"Enter the LOGIN page URL [{default_login_url}]: ")
     login_url = login_url_input if login_url_input else default_login_url
 
